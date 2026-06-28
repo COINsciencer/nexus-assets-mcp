@@ -1,0 +1,47 @@
+{
+  "name": "nexus-assets-mcp",
+  "version": "0.2.0",
+  "description": "MCP server for Nexus Assets — let your AI manage your investment portfolio via natural language",
+  "type": "module",
+  "bin": {
+    "nexus-assets-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "portfolio",
+    "crypto",
+    "assets",
+    "finance",
+    "claude",
+    "ai-agent",
+    "investment"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/COINsciencer/assetsmanger.git",
+    "directory": "mcp-server"
+  },
+  "homepage": "https://nexusassets.top"
+}
