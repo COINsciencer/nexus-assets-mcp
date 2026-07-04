@@ -1,7 +1,7 @@
 {
   "name": "nexus-assets-mcp",
-  "version": "0.2.0",
-  "description": "MCP server for Nexus Assets — let your AI manage your investment portfolio via natural language",
+  "version": "0.2.1",
+  "description": "AI portfolio assistant MCP server for Nexus Assets: connect crypto, stocks, brokers, manual assets, and dashboard data to Claude, Cursor, Windsurf, and other MCP clients.",
   "type": "module",
   "bin": {
     "nexus-assets-mcp": "./dist/index.js"
@@ -29,19 +29,31 @@
   "keywords": [
     "mcp",
     "model-context-protocol",
+    "mcp-server",
+    "ai-portfolio-assistant",
+    "portfolio-tracker",
+    "asset-management",
     "portfolio",
     "crypto",
+    "stocks",
+    "brokerage",
+    "exchange",
+    "dashboard",
     "assets",
     "finance",
     "claude",
+    "cursor",
+    "windsurf",
     "ai-agent",
-    "investment"
+    "personal-finance"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/COINsciencer/assetsmanger.git",
-    "directory": "mcp-server"
+    "url": "git+https://github.com/COINsciencer/nexus-assets-mcp.git"
   },
-  "homepage": "https://nexusassets.top"
+  "homepage": "https://github.com/COINsciencer/nexus-assets-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/COINsciencer/nexus-assets-mcp/issues"
+  }
 }
