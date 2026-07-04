@@ -38,6 +38,93 @@ major position changes, and anything that needs my attention.
 Do not make investment decisions for me; just organize the data and explain what changed.
 ```
 
+## Example Workflows / 示例案例
+
+The screenshots below use a demo portfolio of about **¥30.86M CNY** with diversified assets across US stocks, BTC/ETH, gold, RMB cash, USD cash/T-bills, EUR assets, HK/Asia equities, and manual assets. They are static examples only, not real user data.
+
+下面这些图是静态示例，演示一个约 **3086 万人民币** 的多资产组合。数据不是真实用户资产，只用来展示安装 MCP 后可以实现什么效果。
+
+### 1. Daily Portfolio Report Automation / 每日资产日报定时任务
+
+Ask Codex or Claude Code to create a scheduled task that runs every morning and posts a portfolio report back into the same thread.
+
+![Scheduled daily portfolio report task](docs/images/scheduled-daily-report-task.png)
+
+```text
+请帮我创建一个每日 Nexus Assets 资产日报定时任务。
+每天北京时间早上 8:30 运行。
+使用 Nexus Assets MCP 获取总资产、账户列表、7 日趋势、快照和 dashboard 截图。
+输出总资产、今日变化、资产配置、账户分布、主要涨跌来源、风险提示、
+以及需要我人工确认的数据。
+不要替我做投资决策，只整理数据并解释发生了什么变化。
+```
+
+### 2. Daily Report Prompt Detail / 日报提示词配置详情
+
+This example shows the kind of detailed prompt you can give your AI when you want a richer daily report.
+
+![Daily report automation](docs/images/daily-report-automation.png)
+
+```text
+请每天生成一份更详细的 Nexus Assets 资产日报。
+除了总资产和涨跌，也要包含分类占比、币种敞口、账户数据是否过期、
+7 日趋势、主要资产变化、需要我人工确认的异常数据。
+```
+
+### 3. Ask About Today's Portfolio Performance / 询问今日资产表现
+
+![Portfolio summary chat](docs/images/portfolio-summary-chat.png)
+
+```text
+用 Nexus Assets MCP 总结我今天的资产表现。
+告诉我总资产、今日变化、主要收益来源、账户变化、
+以及有没有需要我关注的异常情况。
+```
+
+### 4. Multi-Asset Allocation Report / 多资产配置报告
+
+![Asset allocation report](docs/images/asset-allocation-report.png)
+
+```text
+用 Nexus Assets MCP 帮我生成一份资产配置报告。
+把资产分成美股、BTC/ETH、黄金、人民币现金、美元现金/短债、
+欧元资产、港股/亚洲权益和手动资产。
+显示每类资产的占比、金额、代表性持仓和集中度提示。
+```
+
+### 5. Currency Exposure Review / 币种敞口分析
+
+![Currency exposure review](docs/images/currency-exposure-review.png)
+
+```text
+用 Nexus Assets MCP 分析我的币种敞口。
+区分 USD、RMB、EUR、HKD 和 Crypto 原生资产。
+说明哪些部分会受到美元利率、人民币汇率、美股、黄金和加密市场波动影响。
+```
+
+### 6. Risk Concentration Review / 风险集中度复盘
+
+![Risk review chat](docs/images/risk-review-chat.png)
+
+```text
+用 Nexus Assets MCP 检查我的组合集中度风险。
+看看我是否过度集中在科技股、半导体、BTC/ETH、单一账户、
+单一币种或单一资产类别。
+只总结风险和数据问题，不要替我做投资决策。
+```
+
+### 7. Screenshot Import Workflow / 截图识别持仓
+
+Send a brokerage screenshot to your AI, let it extract positions, confirm with you, then write them into Nexus Assets as manual assets.
+
+![Screenshot import flow](docs/images/screenshot-import-flow.png)
+
+```text
+请识别这张券商截图里的持仓。
+先列出股票代码、数量和估算市值给我确认。
+我确认以后，再用 Nexus Assets MCP 添加为手动资产。
+```
+
 ## 中文
 
 ### 这个项目是干什么的
