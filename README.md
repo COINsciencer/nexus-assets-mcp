@@ -1,14 +1,74 @@
 # Nexus Assets MCP Server
 
-**Connect your Nexus Assets portfolio to Codex, Claude Code, Cursor, and other MCP-compatible AI tools.**
+**Turn your AI into a private asset management assistant.**
 
-`nexus-assets-mcp` lets your AI assistant read and organize your private Nexus Assets portfolio through natural language: portfolio overview, accounts, balances, manual assets, snapshots, trends, prices, and dashboard screenshots.
+`nexus-assets-mcp` connects [Nexus Assets](https://nexusassets.top) to Codex, Claude Code, Cursor, and other MCP-compatible AI tools. After installing it, your AI can read your private portfolio data and help you do asset management, portfolio statistics, daily performance summaries, account checks, manual asset recording, trend review, and dashboard reporting.
 
 [中文](#中文) | [English](#english) | [Tools](#available-tools)
 
-> For asset tracking and portfolio organization only. Not financial, investment, tax, or legal advice.
+> For asset tracking, portfolio organization, and data analysis only. Not financial, investment, tax, or legal advice.
+
+## What This Project Does
+
+Nexus Assets MCP gives your AI access to your own Nexus Assets data, so you can ask questions like:
+
+```text
+How much did my portfolio change today?
+Which account contributed most to today's profit or loss?
+Summarize my crypto, stock, cash, and manual assets.
+Create a daily portfolio report for me every morning.
+Read this brokerage screenshot and prepare the positions for confirmation.
+Show my 30-day asset trend and explain the main changes.
+```
+
+Typical use cases:
+
+- **Asset management**: view all accounts, balances, categories, and manual assets in one conversation.
+- **Portfolio statistics**: ask for total value, daily change, account breakdown, largest positions, and historical trends.
+- **Daily reports**: ask Codex or Claude Code to generate a daily portfolio summary from your latest Nexus Assets data.
+- **Screenshot workflow**: send a brokerage screenshot to your AI, let it extract positions, then confirm before saving.
+- **Personal analysis**: let your AI summarize risk concentration, unusual changes, missing data, and portfolio structure.
+
+Example prompt after installation:
+
+```text
+Every morning, use Nexus Assets to summarize my portfolio.
+Include total value, daily change, top gainers/losers, account breakdown,
+major position changes, and anything that needs my attention.
+Do not make investment decisions for me; just organize the data and explain what changed.
+```
 
 ## 中文
+
+### 这个项目是干什么的
+
+Nexus Assets MCP 可以把你的 Nexus Assets 资产数据接入 Codex、Claude Code、Cursor Agent 等 AI 工具。装好以后，你可以直接用自然语言问你的 AI：
+
+```text
+我今天资产收益怎么样？
+今天哪个账户变化最大？
+帮我统计一下股票、加密货币、现金和手动资产分别是多少。
+每天早上给我生成一份资产日报。
+识别这张券商截图里的持仓，先列出来给我确认。
+总结最近 30 天资产变化，并告诉我主要变化来自哪里。
+```
+
+它适合做：
+
+- **资产管理**：把交易所、券商、现金、手动资产集中起来问。
+- **资产统计**：查看总资产、今日变化、账户分布、最大持仓、历史趋势。
+- **每日总结**：让 Codex / Claude Code 每天读取最新数据，帮你生成资产日报。
+- **截图录入**：把券商 App 截图发给 AI，让它识别持仓，确认后写入 Nexus Assets。
+- **个人分析**：让 AI 帮你整理仓位集中度、异常变化、缺失数据和资产结构。
+
+装好以后，你可以给 Codex / Claude Code 这样的提示词：
+
+```text
+每天早上用 Nexus Assets 帮我生成一份资产日报。
+包含总资产、今日变化、涨跌来源、账户分布、主要持仓变化、
+需要我注意的异常情况。
+不要替我做投资决策，只整理数据并解释发生了什么变化。
+```
 
 ### 最简单的使用方式
 
@@ -77,6 +137,19 @@ After installing it, please verify that the MCP server is available and then tes
 ```
 
 ## English
+
+### What You Can Use It For
+
+After setup, your AI can help you check portfolio performance, summarize accounts, review historical trends, prepare daily reports, and organize manually entered assets.
+
+Try prompts like:
+
+```text
+Use Nexus Assets to create my daily portfolio report.
+Include total value, daily change, account breakdown, top assets,
+major changes, and anything unusual I should review.
+Do not make investment decisions for me; just summarize and explain the data.
+```
 
 ### Quick Start
 
